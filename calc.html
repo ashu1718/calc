@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice</title>
+    <style>
+        body{
+            background-color: rgb(224, 237, 237);
+        }
+        .b1{
+            background-color: transparent;
+            color: rgb(21, 21, 67);
+            border-radius: 8px;
+            border-color: brown;
+           font-size: larger;
+           padding: 10px 50px;
+           border-width: 3px;
+           margin: 1px;
+        }
+        .b1:hover{
+            background-color: antiquewhite;
+        }
+        .b2:hover{
+            background-color: transparent;
+        }
+        .b2{
+            background-color:rgb(130, 243, 251);
+            color: rgb(21, 21, 67);
+            border-radius: 8px;
+            border-color: brown;
+           font-size: larger;
+           padding: 10px 172px;
+           border-width: 3px;
+           margin: 1px;
+        }
+
+        #d1{
+            border: 1px solid;
+            width: 30rem;
+            background-color: rgba(32, 199, 182, 0.242);
+            margin-bottom: 5px;
+            position: relative;
+            margin-left: 750px;
+            border-radius: 5px;
+            
+             
+        }
+        #hed1{
+            text-align: center;
+            text-decoration: overline;
+            text-shadow: 1px;
+            text-justify: kashida;
+                
+        }
+        #d2{
+            border: 1px solid;
+            text-align: center;
+            background-color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <header id="hed1">
+        <h1>Calculator</h1>
+    </header>
+    
+    
+    <div id="d2">
+        <div id="d1">
+            <h3>0</h3>
+        </div>
+        <button class="b1" onclick="x+='1'; document.querySelector('h3').innerHTML=x">1</button>
+        <button class="b1" onclick="x+='2'; document.querySelector('h3').innerHTML=x">2</button>
+        <button class="b1" onclick="x+='3'; document.querySelector('h3').innerHTML=x" >3</button>
+        <button class="b1" onclick="x+='+'; document.querySelector('h3').innerHTML=x" >+</button><br>
+        <button class="b1" onclick="x+='4'; document.querySelector('h3').innerHTML=x">4</button>
+        <button class="b1" onclick="x+='5'; document.querySelector('h3').innerHTML=x">5</button>
+        <button class="b1" onclick="x+='6'; document.querySelector('h3').innerHTML=x">6</button>
+        <button class="b1" onclick="x+='-'; document.querySelector('h3').innerHTML=x">-</button><br>
+        <button class="b1" onclick="x+='7'; document.querySelector('h3').innerHTML=x">7</button>
+        <button class="b1" onclick="x+='8'; document.querySelector('h3').innerHTML=x">8</button>
+        <button class="b1" onclick="x+='9'; document.querySelector('h3').innerHTML=x" >9</button>
+        <button class="b1" onclick="x+='*'; document.querySelector('h3').innerHTML=x">*</button><br>
+        <button class="b2" onclick="x+='0'; document.querySelector('h3').innerHTML=x">0</button>
+        
+        <button class="b1" onclick="x+='/'; document.querySelector('h3').innerHTML=x">/</button><br>
+        <button class="b2" onclick="document.querySelector('h3').innerHTML=eval(x) ">=</button>
+        <button class="b1" onclick="x=' '; document.querySelector('h3').innerHTML=x">CLR</button>
+     
+    </div>
+   
+   <h1 id="summary"></h1>
+
+<script>
+  let x='';
+ 
+</script>
+
+</body>
+</html>
